@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cot-integrity"
+version = "0.1.0"
+description = "Detecting chain-of-thought tampering with linear probes"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "tqdm>=4.66",
+  "torch>=2.1",
+  "transformers>=4.44",
+  "accelerate>=0.33",
+  "datasets>=2.18",
+  "scikit-learn>=1.3",
+  "joblib>=1.3",
+  "matplotlib>=3.7",
+  "sentencepiece>=0.1.99",
+  "tiktoken>=0.7.0",
+  "protobuf>=4.25.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["cot_integrity*"]

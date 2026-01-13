@@ -1,0 +1,22 @@
+# Core
+numpy>=1.24
+pandas>=2.0
+tqdm>=4.66
+
+# HF / model + data
+torch>=2.1
+transformers>=4.44
+accelerate>=0.33
+datasets>=2.18
+
+# Probing + utils
+scikit-learn>=1.3
+joblib>=1.3
+
+# Plotting
+matplotlib>=3.7
+
+# Tokenizers (often needed for Qwen-family checkpoints)
+sentencepiece>=0.1.99
+tiktoken>=0.7.0
+protobuf>=4.25.0
